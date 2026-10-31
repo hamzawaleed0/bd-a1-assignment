@@ -1,0 +1,28 @@
+K-Means Clustering on TF-IDF (SVD-reduced) Text Features
+============================================================
+Chosen k = 2 (best silhouette among k=2..6)
+
+Silhouette scores by k:
+  k=2: 0.3227
+  k=3: 0.2515
+  k=4: 0.1383
+  k=5: 0.1482
+  k=6: 0.1511
+
+Final silhouette score: 0.3227
+
+Cluster sizes:
+cluster
+0    1802
+1     151
+Name: count, dtype: int64
+
+Cluster vs known CLASS label (crosstab):
+CLASS_LABEL  ham  spam
+cluster               
+0            950   852
+1              0   151
+
+Top terms per cluster:
+  Cluster 0 (n=1802): ['my', 'the', 'song', 'this', 'love', 'to', 'you', 'and', 'subscribe', 'is']
+  Cluster 1 (n=151): ['youtube', 'on', 'out', 'check', 'video', 'this', 'playlist', 'br', 'youtu', 'qq']

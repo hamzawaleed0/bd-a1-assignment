@@ -1,0 +1,21 @@
+Supervised Text Classification - Multinomial Naive Bayes (TF-IDF features)
+========================================================================
+Train size: 1562, Test size: 391
+
+Accuracy:  0.8875
+Precision: 0.8552
+Recall:    0.9403
+F1-score:  0.8957
+
+Confusion Matrix (rows=actual, cols=predicted) [ham, spam]:
+[[158  32]
+ [ 12 189]]
+
+              precision    recall  f1-score   support
+
+         ham       0.93      0.83      0.88       190
+        spam       0.86      0.94      0.90       201
+
+    accuracy                           0.89       391
+   macro avg       0.89      0.89      0.89       391
+weighted avg       0.89      0.89      0.89       391
